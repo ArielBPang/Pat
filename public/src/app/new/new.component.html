@@ -1,0 +1,14 @@
+<h3>Add something you like:</h3>
+
+<div  *ngFor="let err of errors">
+    <p style="color:red;">{{err}}</p>
+</div>
+<form (submit)="createThing()">
+    <label>Title: </label>
+    <input type="text" name="newThing.title" [(ngModel)]="newThing.title"><br>
+    <label>Description: </label>
+    <input type="number" name="newThing.description" [(ngModel)]="newThing.description"><br>
+    <label>Image: </label>
+    <input type="text" name="newThing.image" [(ngModel)]="newThing.image"><br>
+    <input type="submit" value="SUBMIT">
+</form>

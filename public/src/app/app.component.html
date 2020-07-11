@@ -1,0 +1,11 @@
+<h2> Welcome to everything I love about Patrick!</h2>
+<button [routerLink]="['/']" routerLinkActive="router-link-active"  >Home</button>
+
+<button [routerLink]="['/things']" routerLinkActive="router-link-active"  >Things I love</button>
+
+<button [routerLink]="['/thing/new']" routerLinkActive="router-link-active"  >Add more</button>
+<br>
+
+<div class="routeroutlet">
+  <router-outlet></router-outlet>
+</div>
